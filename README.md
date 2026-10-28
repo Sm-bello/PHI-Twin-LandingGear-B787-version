@@ -48,7 +48,7 @@ Aircraft landing gear overhauls are currently dictated by rigid, calendar- or cy
    * Proves that model attention naturally concentrates on the physical Hertzian contact phase ($0.6-1.4$ s).
 5. **Dynamic 100-Flight Twin Evolution & Sovereign Edge Reasoning:**
    * Real-time online parameter re-calibration ($\hat{P}_0$) tracking nitrogen micro-leakage and dynamic seal wear over 100 consecutive landings.
-   * Local, offline Ollama (Llama-3.2) edge model compiles neural prognostic tensors into deterministic ATA Chapter 32 maintenance actions in **907.7 ms** with full data sovereignty.
+   * Local, offline Ollama (Llama-3.2) edge model compiles neural prognostic tensors into deterministic ATA Chapter 32 maintenance actions in **860.0 ms** (total pipeline latency **908.1 ms**) with full data sovereignty.
 
 ---
 
@@ -62,9 +62,11 @@ Aircraft landing gear overhauls are currently dictated by rigid, calendar- or cy
 | **Vanilla LSTM (2-Layer Recurrent)** | $68.90 \pm 0.80\%$ | $67.40 \pm 0.90\%$ | $355.8 \pm 6.2$ h | 12.1 ms |
 | **1D-CNN (Temporal Conv Only)** | $74.10 \pm 0.70\%$ | $73.00 \pm 0.70\%$ | $298.5 \pm 5.4$ h | 8.6 ms |
 | **CNN-BiLSTM (Without Attention)** | $77.30 \pm 0.60\%$ | $76.80 \pm 0.60\%$ | $265.1 \pm 4.8$ h | 14.8 ms |
-| **PHI-Twin (Proposed: Attn + Focal)** | **$80.43 \pm 0.92\%$** | **$80.66 \pm 0.72\%$** | **$242.5 \pm 5.7$ h** | **0.8 ms** |
+| **PHI-Twin (Proposed: Attn + Focal)** | **$80.43 \pm 0.92\%$** | **$80.66 \pm 0.72\%$** | **$242.5 \pm 5.7$ h** | **15.2 ms**$^*$ |
 
-> **Critical Airworthiness Reliability:** PHI-Twin achieves **100% precision and recall on catastrophic failure modes**: Impending AOG (Class 10) and Bogie Pitch Misalignment (Class 11), alongside **94.6% precision on CS-25.473 Hard Landings** (Class 8).
+> $^*$**Latency Specification:** Single-sample forward neural inference on an Intel Core i5 CPU ($2.1$ ms on GPU). The complete end-to-end cyber-physical pipeline (30 Hz UDP ingest, ODE state estimation, feature scaling, neural inference, offline LLM dispatch reasoning, and GUI update) executes in **908.1 ms total latency (< 1.0 s)** on standard edge hardware.
+>
+> **Critical Airworthiness Reliability:** PHI-Twin achieves **100% precision and recall ($0/105$ misclassifications on held-out test data) on catastrophic failure modes**: Impending AOG (Class 10) and Bogie Pitch Misalignment (Class 11), alongside **94.6% precision on CS-25.473 Hard Landings** (Class 8).
 
 <p align="center">
   <img src="figures/fig4_confusion_matrix_and_roc.png" width="95%" alt="Confusion Matrix">
