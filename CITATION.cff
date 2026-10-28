@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset in your research, please cite our paper as below."
+authors:
+  - family-names: "Sani"
+    given-names: "Mohammed Bello"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Air Force Institute of Technology (AFIT), Kaduna, Nigeria"
+  - family-names: "Iyaghigba"
+    given-names: "Samuel David"
+    affiliation: "Air Force Institute of Technology (AFIT), Kaduna, Nigeria"
+  - family-names: "Adewale"
+    given-names: "Ajayi Joel"
+    affiliation: "Air Force Institute of Technology (AFIT), Kaduna, Nigeria"
+  - family-names: "Ayosubomi"
+    given-names: "Oyewo Imad-din"
+    affiliation: "Air Force Institute of Technology (AFIT), Kaduna, Nigeria"
+title: "PHI-Twin: An Edge Digital Twin Framework for Aircraft Landing Gear Prognostics via Physics-Based Simulation and Explainable AI"
+version: 1.0.0
+date-released: 2026-10-28
+url: "https://github.com/Sm-bello/PHI-Twin-LandingGear-B787-version"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Sani"
+      given-names: "Mohammed Bello"
+    - family-names: "Iyaghigba"
+      given-names: "Samuel David"
+    - family-names: "Adewale"
+      given-names: "Ajayi Joel"
+    - family-names: "Ayosubomi"
+      given-names: "Oyewo Imad-din"
+  title: "PHI-Twin: An Edge Digital Twin Framework for Aircraft Landing Gear Prognostics via Physics-Based Simulation and Explainable AI"
+  journal: "Mechanical Systems and Signal Processing"
+  year: 2026

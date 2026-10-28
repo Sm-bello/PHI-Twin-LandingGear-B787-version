@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Datasets (>50MB) - full dataset is hosted on Kaggle
+data/AEROTWIN_B787_V4p5_Dataset.csv
+*.csv.gz
+*.tar.gz
+*.zip
+
+# Keep only the sample dataset
+!data/sample_dataset.csv
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# PyTorch checkpoints (keep only models/best_model.pt)
+*.pth
+*.pt
+!models/best_model.pt
+
+# MATLAB / Simulink caches
+slprj/
+*.slxc
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+*.tmp

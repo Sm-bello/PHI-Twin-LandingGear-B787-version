@@ -1,0 +1,21 @@
+AEROTWIN B787 CNN-LSTM
+Val acc: 80.2%  Test acc: 80.6%  RUL MAE: 244.4h
+
+                precision    recall  f1-score   support
+
+        Normal      0.797     0.771     0.784       525
+       N2 Leak      0.929     0.791     0.854       330
+     Worn Seal      0.899     0.645     0.751       330
+  Early Degrad      0.758     0.729     0.743       240
+Thermal Degrad      0.629     0.962     0.761       210
+    Brake Fade      0.358     0.291     0.321       165
+    Tire Burst      0.749     0.926     0.828       135
+     Corrosion      0.820     0.994     0.899       165
+  Hard Landing      0.917     0.978     0.946       135
+      Combined      0.803     0.883     0.841       120
+ Impending AOG      1.000     1.000     1.000       105
+   Bogie Pitch      1.000     1.000     1.000       240
+
+      accuracy                          0.806      2700
+     macro avg      0.805     0.831     0.811      2700
+  weighted avg      0.813     0.806     0.802      2700
